@@ -106,3 +106,102 @@ spriteTypes = {
 	texturefile = "gfx/interface/goals/JAP_army.png"			
 	}
 }
+
+spriteTypes = {
+
+	SpriteType = {
+	name = "GFX_r56_goal_FRA_status_quo"
+	texturefile = "gfx/interface/goals/r56_goal_FRA_status_quo.dds"			
+	}
+}
+spriteTypes = {
+
+	SpriteType = {
+	name = "GFX_NFA_Restore_the_Suspended_Constitution"
+	texturefile = "gfx/interface/goals/NFA_Restore_the_Suspended_Constitution.png"			
+	}
+}
+spriteTypes = {
+
+	SpriteType = {
+	name = "GFX_r56_goal_FRA_char_de_bataille"
+	texturefile = "gfx/interface/goals/r56_goal_FRA_char_de_bataille.dds"			
+	}
+}
+spriteTypes = {
+
+	SpriteType = {
+	name = "GFX_r56_goal_FRA_allies"
+	texturefile = "gfx/interface/goals/r56_goal_FRA_allies.dds"			
+	}
+}
+spriteTypes = {
+
+	SpriteType = {
+	name = "GFX_r56_goal_FRA_far_right_leagues"
+	texturefile = "gfx/interface/goals/r56_goal_FRA_far_right_leagues.dds"			
+	}
+}
+spriteTypes = {
+
+	SpriteType = {
+	name = "GFX_NFA_africa"
+	texturefile = "gfx/interface/goals/NFA_africa.png"			
+	}
+}
+spriteTypes = {
+
+	SpriteType = {
+	name = "GFX_NFA_deal_with_the_devil"
+	texturefile = "gfx/interface/goals/NFA_deal_with_the_devil.png"			
+	}
+}
+spriteTypes = {
+
+	SpriteType = {
+	name = "GFX_NFA_france_first"
+	texturefile = "gfx/interface/goals/NFA_france_first.png"			
+	}
+}
+spriteTypes = {
+
+	SpriteType = {
+	name = "GFX_FRA_paris"
+	texturefile = "gfx/interface/goals/FRA_paris.png"			
+	}
+}
+spriteTypes = {
+
+	SpriteType = {
+	name = "GFX_r56_goal_FRA_increase_military_spendings"
+	texturefile = "gfx/interface/goals/r56_goal_FRA_increase_military_spendings.dds"			
+	}
+}
+spriteTypes = {
+
+	SpriteType = {
+	name = "GFX_r56_goal_FRA_legacy_of_the_grande_armee"
+	texturefile = "gfx/interface/goals/r56_goal_FRA_legacy_of_the_grande_armee.dds"			
+	}
+}
+spriteTypes = {
+
+	SpriteType = {
+	name = "GFX_NFA_rightful_borders"
+	texturefile = "gfx/interface/goals/NFA_rightful_borders.png"			
+	}
+}
+spriteTypes = {
+
+	SpriteType = {
+	name = "GFX_r56_goal_FRA_defense"
+	texturefile = "gfx/interface/goals/r56_goal_FRA_defense.dds"			
+	}
+}
+spriteTypes = {
+
+	SpriteType = {
+	name = "GFX_r56_goal_FRA_nuclear"
+	texturefile = "gfx/interface/goals/r56_goal_FRA_nuclear.dds"			
+	}
+}

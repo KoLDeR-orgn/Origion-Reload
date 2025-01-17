@@ -394,7 +394,6 @@ ideas = {
 						has_dlc = "Together for Victory"
 					}
 					OR = {
-						has_completed_focus = CAN_compromise_with_quebec
 						has_completed_focus = CAN_forced_quebec_conscription
 					}
 				}
@@ -538,7 +537,6 @@ ideas = {
 						has_dlc = "Together for Victory"
 					}
 					OR = {
-						has_completed_focus = CAN_compromise_with_quebec
 						has_completed_focus = CAN_forced_quebec_conscription
 					}
 				}
@@ -672,7 +670,6 @@ ideas = {
 						has_dlc = "Together for Victory"
 					}
 					OR = {
-						has_completed_focus = CAN_compromise_with_quebec
 						has_completed_focus = CAN_forced_quebec_conscription
 					}
 				}

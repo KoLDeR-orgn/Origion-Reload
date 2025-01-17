@@ -235,137 +235,127 @@
 		available_if_capitulated = no
 
 		complete_tooltip = {
-			864 = {
+			random_owned_controlled_state = {
+				prioritize = { 864 }
 				limit = {
 					free_building_slots = {
 						building = infrastructure
-						size > 0
-						include_locked = yes
+						size > 1
 					}
 				}
-
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
 			}
-
-
-			865 = {
+			random_owned_controlled_state = {
+				prioritize = { 865 }
 				limit = {
 					free_building_slots = {
 						building = infrastructure
-						size > 0
-						include_locked = yes
+						size > 1
 					}
 				}
-
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
 			}
-			867 = {
+			random_owned_controlled_state = {
+				prioritize = { 866 }
 				limit = {
 					free_building_slots = {
 						building = infrastructure
-						size > 0
-						include_locked = yes
+						size > 1
 					}
 				}
-
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
 			}
-			866 = {
+			random_owned_controlled_state = {
+				prioritize = { 867 }
 				limit = {
 					free_building_slots = {
 						building = infrastructure
-						size > 0
-						include_locked = yes
+						size > 1
 					}
 				}
-
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
 			}
-			862 = {
+			
+			random_owned_controlled_state = {
+				prioritize = { 862 }
 				limit = {
 					free_building_slots = {
 						building = infrastructure
-						size > 0
-						include_locked = yes
+						size > 1
 					}
 				}
-
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
 			}
-			863 = {
+			random_owned_controlled_state = {
+				prioritize = { 863 }
 				limit = {
 					free_building_slots = {
 						building = infrastructure
-						size > 0
-						include_locked = yes
+						size > 1
 					}
 				}
-
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
 			}
-						860 = {
+			random_owned_controlled_state = {
+				prioritize = { 860 }
 				limit = {
 					free_building_slots = {
 						building = infrastructure
-						size > 0
-						include_locked = yes
+						size > 1
 					}
 				}
-
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
 			}
-						861 = {
+			random_owned_controlled_state = {
+				prioritize = { 866 }
 				limit = {
 					free_building_slots = {
 						building = infrastructure
-						size > 0
-						include_locked = yes
+						size > 1
 					}
 				}
-
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
 			}
-						866 = {
+			random_owned_controlled_state = {
+				prioritize = { 861 }
 				limit = {
 					free_building_slots = {
 						building = infrastructure
-						size > 0
-						include_locked = yes
+						size > 1
 					}
 				}
-
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -375,137 +365,127 @@
 		}
 
 		completion_reward = {
-			864 = {
+			random_owned_controlled_state = {
+				prioritize = { 864 }
 				limit = {
 					free_building_slots = {
 						building = infrastructure
-						size > 0
-						include_locked = yes
+						size > 1
 					}
 				}
-
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
 			}
-
-
-			865 = {
+			random_owned_controlled_state = {
+				prioritize = { 865 }
 				limit = {
 					free_building_slots = {
 						building = infrastructure
-						size > 0
-						include_locked = yes
+						size > 1
 					}
 				}
-
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
 			}
-			867 = {
+			random_owned_controlled_state = {
+				prioritize = { 866 }
 				limit = {
 					free_building_slots = {
 						building = infrastructure
-						size > 0
-						include_locked = yes
+						size > 1
 					}
 				}
-
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
 			}
-			866 = {
+			random_owned_controlled_state = {
+				prioritize = { 867 }
 				limit = {
 					free_building_slots = {
 						building = infrastructure
-						size > 0
-						include_locked = yes
+						size > 1
 					}
 				}
-
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
 			}
-			862 = {
+			
+			random_owned_controlled_state = {
+				prioritize = { 862 }
 				limit = {
 					free_building_slots = {
 						building = infrastructure
-						size > 0
-						include_locked = yes
+						size > 1
 					}
 				}
-
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
 			}
-			863 = {
+			random_owned_controlled_state = {
+				prioritize = { 863 }
 				limit = {
 					free_building_slots = {
 						building = infrastructure
-						size > 0
-						include_locked = yes
+						size > 1
 					}
 				}
-
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
 			}
-						860 = {
+			random_owned_controlled_state = {
+				prioritize = { 860 }
 				limit = {
 					free_building_slots = {
 						building = infrastructure
-						size > 0
-						include_locked = yes
+						size > 1
 					}
 				}
-
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
 			}
-						861 = {
+			random_owned_controlled_state = {
+				prioritize = { 866 }
 				limit = {
 					free_building_slots = {
 						building = infrastructure
-						size > 0
-						include_locked = yes
+						size > 1
 					}
 				}
-
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
 			}
-						866 = {
+			random_owned_controlled_state = {
+				prioritize = { 861 }
 				limit = {
 					free_building_slots = {
 						building = infrastructure
-						size > 0
-						include_locked = yes
+						size > 1
 					}
 				}
-
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -523,7 +503,7 @@
 		y = 3
 		relative_position_id = CAN_crown_corporations
 
-		cost = 20
+		cost = 10
 
 		ai_will_do = {
 			factor = 75
@@ -651,128 +631,118 @@
 		available_if_capitulated = no
 
 		complete_tooltip = {
-			473 = {
+			random_owned_controlled_state = {
+				prioritize = { 473 }
 				limit = {
 					free_building_slots = {
 						building = infrastructure
-						size > 0
-						include_locked = yes
+						size > 1
 					}
 				}
-
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
-
-			740 = {
+			random_owned_controlled_state = {
+				prioritize = { 740 }
 				limit = {
 					free_building_slots = {
 						building = infrastructure
-						size > 0
-						include_locked = yes
+						size > 1
 					}
 				}
-
 				add_building_construction = {
 					type = infrastructure
-					level = 4
+					level = 1
 					instant_build = yes
 				}
 			}
-			739 = {
+			random_owned_controlled_state = {
+				prioritize = { 739 }
 				limit = {
 					free_building_slots = {
 						building = infrastructure
-						size > 0
-						include_locked = yes
+						size > 1
 					}
 				}
-
 				add_building_construction = {
 					type = infrastructure
-					level = 4
+					level = 1
 					instant_build = yes
 				}
 			}
-			471 = {
+			random_owned_controlled_state = {
+				prioritize = { 741 }
 				limit = {
 					free_building_slots = {
 						building = infrastructure
-						size > 0
-						include_locked = yes
+						size > 1
 					}
 				}
-
 				add_building_construction = {
 					type = infrastructure
-					level = 4
+					level = 1
 					instant_build = yes
 				}
 			}
 		}
 
 		completion_reward = {
-			473 = {
+				random_owned_controlled_state = {
+				prioritize = { 473 }
 				limit = {
 					free_building_slots = {
 						building = infrastructure
-						size > 0
-						include_locked = yes
+						size > 1
 					}
 				}
-
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
-
-			740 = {
+			random_owned_controlled_state = {
+				prioritize = { 740 }
 				limit = {
 					free_building_slots = {
 						building = infrastructure
-						size > 0
-						include_locked = yes
+						size > 1
 					}
 				}
-
 				add_building_construction = {
 					type = infrastructure
-					level = 4
+					level = 1
 					instant_build = yes
 				}
 			}
-			739 = {
+			random_owned_controlled_state = {
+				prioritize = { 739 }
 				limit = {
 					free_building_slots = {
 						building = infrastructure
-						size > 0
-						include_locked = yes
+						size > 1
 					}
 				}
-
 				add_building_construction = {
 					type = infrastructure
-					level = 4
+					level = 1
 					instant_build = yes
 				}
 			}
-			471 = {
+			random_owned_controlled_state = {
+				prioritize = { 741 }
 				limit = {
 					free_building_slots = {
 						building = infrastructure
-						size > 0
-						include_locked = yes
+						size > 1
 					}
 				}
-
 				add_building_construction = {
 					type = infrastructure
-					level = 4
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -807,68 +777,62 @@
 		available_if_capitulated = no
 
 		complete_tooltip = {
-			332 = {
+			random_owned_controlled_state = {
+				prioritize = { 331 }
 				limit = {
 					free_building_slots = {
 						building = infrastructure
-						size > 0
-						include_locked = yes
+						size > 1
 					}
 				}
-
 				add_building_construction = {
 					type = infrastructure
-					level = 4
+					level = 1
 					instant_build = yes
 				}
 			}
-
-			331 = {
+			random_owned_controlled_state = {
+				prioritize = { 332 }
 				limit = {
 					free_building_slots = {
 						building = infrastructure
-						size > 0
-						include_locked = yes
+						size > 1
 					}
 				}
-
 				add_building_construction = {
 					type = infrastructure
-					level = 3
+					level = 1
 					instant_build = yes
 				}
 			}
 		}
 
 		completion_reward = {
-			332 = {
+			random_owned_controlled_state = {
+				prioritize = { 331 }
 				limit = {
 					free_building_slots = {
 						building = infrastructure
-						size > 0
-						include_locked = yes
+						size > 1
 					}
 				}
-
 				add_building_construction = {
 					type = infrastructure
-					level = 4
+					level = 1
 					instant_build = yes
 				}
 			}
-
-			331 = {
+			random_owned_controlled_state = {
+				prioritize = { 332 }
 				limit = {
 					free_building_slots = {
 						building = infrastructure
-						size > 0
-						include_locked = yes
+						size > 1
 					}
 				}
-
 				add_building_construction = {
 					type = infrastructure
-					level = 3
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -2815,7 +2779,6 @@
 		icon = GFX_focus_generic_total_war
 		prerequisite = { focus = CAN_defense_research_grants }
 		prerequisite = { focus = CAN_imperial_oil }
-		prerequisite = { focus = CAN_retoot }
 		prerequisite = { focus = CAN_polymer_corporation }
 		prerequisite = { focus = CAN_john_inglis_and_company }
 		x = 2
@@ -3665,7 +3628,7 @@
 			add_tech_bonus = {
 				name = CAN_a_motorized_army
 				bonus = 1.0
-				uses = 1
+				uses = 4
 				category = motorized_equipment
 				technology = tech_field_hospital
 				technology = tech_field_hospital2
@@ -4519,14 +4482,14 @@
 		y = 3
 		relative_position_id = CAN_halifax_shipyards
 
-		cost = 20
+		cost = 10
 
 		ai_will_do = {
 			factor = 25
 		}
 
 		available = {
-
+		dockyard > 9
 		}
 		
 		bypass = {
