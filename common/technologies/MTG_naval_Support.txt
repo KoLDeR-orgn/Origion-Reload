@@ -916,6 +916,10 @@ technologies = {
 
 		start_year = 1944
 
+		allow = {
+			date > 1942.01.1
+		}
+
 		enable_equipment_modules = {
 			dp_light_battery_4
 			dp_ship_secondaries_4
@@ -1189,6 +1193,9 @@ technologies = {
 
 		start_year = 1940
 
+		allow = {
+			date > 1939.01.1
+		}
 
 		naval_torpedo_reveal_chance_factor = -0.25
 
@@ -1269,6 +1276,11 @@ technologies = {
 
 		start_year = 1940
 
+		allow = {
+			date > 1939.01.1
+		}
+
+
 		path = {
 			leads_to_tech = modern_ship_torpedo_launcher
 			research_cost_coeff = 1
@@ -1311,6 +1323,10 @@ technologies = {
 		research_cost = 1.5
 
 		start_year = 1944
+
+		allow = {
+			date > 1942.01.1
+		}
 
 		enable_equipment_modules = {
 			ship_torpedo_4
