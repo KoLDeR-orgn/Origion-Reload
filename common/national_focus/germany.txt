@@ -765,14 +765,14 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			has_tech = oil_processing
+			date > 1940.6.1
 		}
 		completion_reward = {
 			add_ideas = GER_synthetic_oil
 			add_tech_bonus = {
 				name = GER_synthetic_oil
-				bonus = 3.0
-				uses = 1
+				bonus = 1.5
+				uses = 4
 				technology = oil_processing
 				technology = improved_oil_processing
 				technology = advanced_oil_processing
@@ -1062,10 +1062,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
-		available = {
-			NOT = { has_war_with = HUN }
-		}
+		
 		completion_reward = {
 			if = {
 				limit = {
@@ -1112,12 +1109,6 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
-		available = {
-			NOT = { has_war_with = ROM }
-		}
-
-		
 		
 		completion_reward = {
 			if = {
@@ -1164,11 +1155,6 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 1
-		}
-
-		available = {
-			is_subject = no
-			
 		}
 
 		available_if_capitulated = no
@@ -1267,33 +1253,6 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		complete_tooltip = {
-			air_experience = 25
-			add_doctrine_cost_reduction = {
-				name = air_sup_bonus
-				cost_reduction = 0.25
-				uses = 2
-				category = battlefield_support_tree
-			}
-			every_state = {
-				limit = { has_state_flag = GER_air_innovation_2air }
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-			}
-			every_state = {
-				limit = { has_state_flag = GER_air_innovation_6air }
-				add_building_construction = {
-					type = air_base
-					level = 6
-					instant_build = yes
-				}
-			}
-			custom_effect_tooltip = available_chief_of_airforce
-			show_ideas_tooltip = ritter_von_greim
-		}
 		
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -1306,68 +1265,30 @@ focus_tree = {
 				uses = 2
 				category = battlefield_support_tree
 			}
-
-			if = {
-				limit = {
-					NOT = {
-						any_owned_state = {
-							air_base > 3
-							air_base < 9
-						}
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = air_base
-							size > 5
-						}
-					}
-					add_building_construction = {
-						type = air_base
-						level = 6
-						instant_build = yes
-					}
-					set_state_flag = GER_air_innovation_6air
-				}				
-			}
-
-			random_owned_controlled_state = {
-				limit = {
-					air_base > 3
-					air_base < 9
-				}
+			
+			42 = {
 				add_building_construction = {
 					type = air_base
-					level = 2
+					level = 10
 					instant_build = yes
 				}
-				set_state_flag = GER_air_innovation_2air
 			}
-			random_owned_controlled_state = {
-				limit = {
-					air_base > 3
-					air_base < 9
-				}
+			
+			763 = {
 				add_building_construction = {
 					type = air_base
-					level = 2
+					level = 4
 					instant_build = yes
 				}
-				set_state_flag = GER_air_innovation_2air
 			}
-			random_owned_controlled_state = {
-				limit = {
-					air_base > 2
-					air_base < 9
-				}
+			
+			64 = {
 				add_building_construction = {
 					type = air_base
-					level = 2
+					level = 4
 					instant_build = yes
 				}
-				set_state_flag = GER_air_innovation_2air
-			}
+			}			
 			custom_effect_tooltip = available_chief_of_airforce
 			show_ideas_tooltip = ritter_von_greim
 			custom_effect_tooltip = available_military_high_command
@@ -1548,15 +1469,16 @@ focus_tree = {
 		completion_reward = { 
 			add_tech_bonus = {
 				name = bomber_bonus
-				bonus = 1.0
+				bonus = 3.0
 				uses = 1
-				category = light_fighter			
+				technology = advanced_small_airframe			
 			}	
 			add_tech_bonus = {
 				name = bomber_bonus
 				bonus = 0.5
 				uses = 2
-				category = plane_modules_tech	
+				technology = engines_4
+				technology = aa_cannon_3
 			}
 		}	
 	}
@@ -1578,7 +1500,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = { 
-			add_ideas = GER_CAS
+			swap_ideas = {
+				remove_idea = ger_reichsluftfahrtministerium
+				add_idea = ger_reichsluftfahrtministerium_second
+			}
 		}	
 	}
 
@@ -1842,24 +1767,6 @@ focus_tree = {
 				}
 				country_event = { id = news.32 }
 			}
-			# additional 3 anti-tank bonuses!
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = anti_tank_bonus
-						option = both
-					}
-				}
-				add_tech_bonus = {
-					name = shm_ger_sov_treaty_at
-					bonus = 1.0
-					uses = 3
-					technology = antitank3
-					technology = antitank4
-					technology = antitank5
-				}
-				custom_effect_tooltip = "RThe Soviet Union will receive similar bonuses as well.W"
-			}
 			custom_effect_tooltip = GER_mol_rib_pact_tt
 		}
 	}
@@ -1927,20 +1834,6 @@ focus_tree = {
 		id = GER_swedish_trade_agreement
 		icon = GFX_focus_generic_befriend_sweden
 		prerequisite = { focus = GER_lider_faction}
-		available = {
-			is_subject = no
-			AND = {
-				country_exists = SWE
-				SWE = { is_subject = no }
-				NOT = { has_war_with = SWE }
-				SWE = {
-					custom_trigger_tooltip = {
-						tooltip = GER_alone_or_peace_faction_tt
-						is_alone_or_in_faction_at_peace_with_GER = yes
-					}
-				}
-			}
-		}
 		x = -2
 		y = 2
 		relative_position_id = GER_rhineland
@@ -2672,10 +2565,6 @@ focus_tree = {
 						FRA = {
 							controls_state = 20
 							controls_state = 21
-							
-							NOT = {
-								has_government = fascism
-							}
 						}
 						
 						FRA = {
@@ -2712,11 +2601,13 @@ focus_tree = {
 				}
 				
 				ITA = {
-					surrender_progress > 0.45
+					surrender_progress > 0.35
 				}
 				
-				ROM = {
-					surrender_progress > 0.30
+				if = { limit = { ROM = { exists = yes } }
+					ROM = {
+						surrender_progress > 0.30
+					}
 				}
 				
 				hidden_trigger = { date > 1943.2.18 }
@@ -3609,10 +3500,7 @@ focus_tree = {
 		prerequisite = {focus = GER_lider_faction}
 		relative_position_id = GER_lider_faction
 		available = {
-			GER = {
-			is_faction_leader = yes
-			is_in_faction_with = ITA
-			}
+			date > 1940.6.1
 		}
 		bypass = {
 		}
@@ -3644,11 +3532,7 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_ITA_stell
 		}
-		available = {
-			has_war = yes
-		}
-		bypass = {
-		}
+
 		relative_position_id = GER_ITA_stell
 		cancel_if_invalid = yes
 		x = 1
@@ -3666,14 +3550,6 @@ focus_tree = {
 		icon = GFX_focus_ITA_redirect_alfa_romeo_production
 		prerequisite = {
 			focus = GER_ITA_stell
-		}
-		available = {
-			GER = {
-			is_faction_leader = yes
-			is_in_faction_with = ITA
-			}
-		}
-		bypass = {
 		}
 		relative_position_id = GER_ITA_stell
 		
@@ -3715,14 +3591,7 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_integrate_war_economies
 		}
-		available = {
-			GER = {
-						is_faction_leader = yes
-						is_in_faction_with = HUN
-					}
-		}
-		bypass = {
-		}
+
 		relative_position_id = GER_align_hungary
 		cancel_if_invalid = yes
 		x = 0
@@ -3757,14 +3626,6 @@ focus_tree = {
 			focus = GER_HUN_Aliim
 			
 		}
-		available = {
-			GER = {
-			is_faction_leader = yes
-			is_in_faction_with = HUN
-			}
-		}
-		bypass = {
-		}
 		relative_position_id = GER_HUN_Aliim
 		
 		cancel_if_invalid = yes
@@ -3792,14 +3653,6 @@ focus_tree = {
 		icon = GFX_focus_invite_romania
 		prerequisite = {
 			focus = GER_integrate_war_economies
-		}
-		available = {
-			GER = {
-						is_faction_leader = yes
-						is_in_faction_with = ROM
-					}
-		}
-		bypass = {
 		}
 		relative_position_id = GER_align_romania
 		cancel_if_invalid = yes
@@ -3829,21 +3682,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = GER_ROM_bochka
+		id = GER_ROM_bochka # бочки убрал нахуй, дается бафф на запасы топляка
 		icon = GFX_focus_generic_stockpile_fuel
 		prerequisite = {
 			focus = GER_ROM_oil
 			
 		}
 		
-		available = {
-			GER = {
-						is_faction_leader = yes
-						is_in_faction_with = ROM
-					}
-		}
-		bypass = {
-		}
 		relative_position_id = GER_ROM_oil
 		
 		cancel_if_invalid = yes
@@ -3855,30 +3700,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			84 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = fuel_silo
-					level = 2
-					instant_build = yes
-				}
-			}
-			79 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = fuel_silo
-					level = 2
-					instant_build = yes
-				}
-			}
-			81 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = fuel_silo
-					level = 2
-					instant_build = yes
-				}
-			}
+			ROM = { add_ideas = rom_oil_reserves }
 		}
 	}
 	
@@ -3887,14 +3709,6 @@ focus_tree = {
 		icon = GFX_focus_generic_befriend_bulgaria
 		prerequisite = {
 			focus = GER_integrate_war_economies
-		}
-		available = {
-			GER = {
-						is_faction_leader = yes
-						is_in_faction_with = BUL
-					}
-		}
-		bypass = {
 		}
 		relative_position_id = GER_integrate_war_economies
 		cancel_if_invalid = yes
@@ -3928,14 +3742,7 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_BUL_Chromik
 		}
-		available = {
-			GER = {
-				is_faction_leader = yes
-				is_in_faction_with = BUL
-			}
-		}
-		bypass = {
-		}
+
 		relative_position_id = GER_BUL_Chromik
 		
 		cancel_if_invalid = yes

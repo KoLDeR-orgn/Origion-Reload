@@ -260,12 +260,8 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 0.5
 			breakthrough = 5
+			
 		}
-		
-		multiply_stats = {
-			ap_attack = -0.35
-		}
-		
 		dismantle_cost_ic = 0.5
 		xp_cost = 0
 		multiply_stats = {
@@ -289,11 +285,6 @@ equipment_modules = {
 			breakthrough = 8
 			
 		}
-		
-		multiply_stats = {
-			ap_attack = -0.25
-		}
-		
 		xp_cost = 0
 		dismantle_cost_ic = 0.5
 		multiply_stats = {
@@ -317,11 +308,6 @@ equipment_modules = {
 			maximum_speed = -0.1
 			breakthrough = 12
 		}
-		
-		multiply_stats = {
-			ap_attack = -0.15
-		}
-		
 		dismantle_cost_ic = 0.5
 		xp_cost = 0
 		multiply_stats = {
@@ -359,7 +345,6 @@ equipment_modules = {
 
 		multiply_stats = {
 			breakthrough = -0.25
-			ap_attack = -0.55
 		}
 
 		can_convert_from = {
@@ -1504,21 +1489,18 @@ equipment_modules = {
 		abbreviation = "sque"
 		category = tank_special_module
 		sfx = sfx_ui_sd_module_turret
-
 		add_stats = {
 			
 		}
 		xp_cost = 0
 		multiply_stats = {
-			soft_attack = 0.05
-			hard_attack = 0.05
+			ap_attack = 0.2
 		}
 
 		build_cost_resources = {
 			tungsten = 1
 		}
 	}
-
 	armor_skirts = {
 		abbreviation = "skirt"
 		category = tank_special_module

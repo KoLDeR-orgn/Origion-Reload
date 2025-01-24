@@ -430,21 +430,6 @@ characters={
 				small="GFX_idea_kurt_student"
 			}
 		}
-		advisor={
-			slot = high_command
-			idea_token = kurt_student
-			ledger = air
-			allowed = {
-				original_tag = GER
-			}
-			traits = {
-				air_airborne_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
 		
 		corps_commander={
 			traits={ trait_reckless commando }
@@ -1326,21 +1311,6 @@ characters={
 				small="GFX_idea_erhard_milch"
 			}
 		}
-		advisor={
-			slot = high_command
-			idea_token = erhard_milch
-			ledger = air
-			allowed = {
-				original_tag = GER
-			}
-			traits = {
-				air_air_superiority_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
 	}
 
 	GER_erich_bey={
@@ -1350,21 +1320,6 @@ characters={
 				small="GFX_idea_erich_bey"
 			}
 		}
-		advisor={
-			slot = high_command
-			idea_token = erich_bey
-			ledger = navy
-			allowed = {
-				original_tag = GER
-			}
-			traits = {
-				navy_naval_air_defense_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
 	}
 	
 	GER_viktor_schutze={
@@ -1372,21 +1327,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_viktor_schutze"
-			}
-		}
-		advisor={
-			slot = high_command
-			idea_token = viktor_schutze
-			ledger = navy
-			allowed = {
-				original_tag = GER
-			}
-			traits = {
-				navy_anti_submarine_1
-			}
-			cost =  50
-			ai_will_do = {
-				factor = 1.000
 			}
 		}
 	}
@@ -1659,25 +1599,6 @@ characters={
 				small="GFX_idea_joachim_von_ribbentrop"
 			}
 		}
-		advisor={
-			slot = political_advisor
-			idea_token = joachim_von_ribbentrop
-			allowed = {
-				original_tag = GER
-			}
-			available = {
-				OR = {
-					has_government = fascism 
-					has_country_flag = GER_reinstated_nazi_leadership 
-				}
-			}
-			traits = {
-				backroom_backstabber 
-			}
-			ai_will_do = {
-				factor = 0.000
-			}
-		}
 	}
 
 	GER_konstantin_von_neurath={
@@ -1687,16 +1608,6 @@ characters={
 				small="GFX_idea_konstantin_von_neurath"
 			}
 		}
-		advisor={
-			slot = political_advisor
-			idea_token = konstantin_von_neurath
-			allowed = {
-				original_tag = GER
-			}
-			traits = {
-				smooth_talking_charmer 
-			}
-		}
 	}
 
 	GER_wilhelm_canaris={
@@ -1704,20 +1615,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_ger_wilhelm_canaris"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = ger_wilhelm_canaris
-			available = {
-				has_intelligence_agency = yes 
-			}
-			allowed = {
-				original_tag = GER
-				has_dlc = "La Resistance"
-			}
-			traits = {
-				head_of_intelligence 
 			}
 		}		
 	}
